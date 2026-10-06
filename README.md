@@ -19,6 +19,28 @@ this page describes what it does.
 | **Planning measurements** | Clearance to the mandibular nerve canal, distance to the sinus floor, bone height and width at a site, airway narrowing |
 | **Doctor confirms** | Every measurement is marked as decision support for the doctor to confirm. Nothing is presented as a diagnosis |
 
+## From scan to plan
+
+```mermaid
+flowchart LR
+    A[Doctor uploads<br/>CBCT scan] --> B[Volume rebuilt<br/>in Hounsfield units]
+    B --> C[2D slices<br/>axial · coronal · sagittal]
+    B --> D[3D view]
+    B --> E[Virtual panoramic<br/>along the arch]
+    B --> F[Planning measurements<br/>nerve canal · sinus · bone]
+    C & D & E & F --> G{Doctor reviews<br/>and confirms}
+```
+
+1. **Upload.** The doctor drops in a scan as a DICOM series or a ZIP. Noah Studio checks it and
+   rebuilds a 3D volume where every point carries its tissue density.
+2. **Review.** The doctor scrolls the three standard planes, rotates the 3D view, and opens a
+   panoramic view built along the dental arch, the view dentists are used to reading.
+3. **Focus.** Picking a tooth by its number centers every view on that site.
+4. **Measure.** For a planned implant site, Noah Studio measures bone height and width, distance
+   to the mandibular nerve canal, distance to the sinus floor, and flags a narrowed airway.
+5. **Confirm.** Every number is shown as planning support with what it was measured from. The
+   doctor makes the clinical decision; the software never presents a diagnosis.
+
 ## How it's built
 
 - **Imaging pipeline:** DICOM series → a 3D volume in Hounsfield units → reformatted slices,
