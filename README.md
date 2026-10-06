@@ -38,8 +38,8 @@ flowchart LR
 3. **Focus.** Picking a tooth by its number centers every view on that site.
 4. **Measure.** For a planned implant site, Noah Studio measures bone height and width, distance
    to the mandibular nerve canal, distance to the sinus floor, and flags a narrowed airway.
-5. **Confirm.** Every number is shown as planning support with what it was measured from. The
-   doctor makes the clinical decision; the software never presents a diagnosis.
+5. **Confirm.** Every number is shown as planning support for the doctor to confirm. The doctor
+   makes the clinical decision; the software never presents a diagnosis.
 
 ## How it's built
 
