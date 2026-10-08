@@ -1,9 +1,9 @@
 # Noah Studio
 
-**CBCT review and implant-planning assistance for dental implant doctors**, built at AMII.
+**CBCT review and implant-planning assistance for dental implant doctors**, built at GentleArk.
 
-Noah Studio is part of Noah, the AI assistant and ordering platform I build and run at AMII, a
-dental implant company. A doctor loads a patient's cone-beam CT (CBCT) scan, reviews it in 2D and
+Noah Studio is part of Noah, the AI assistant I build at GentleArk, the company I cofounded with
+the support of AMII America, a dental implant company. A doctor loads a patient's cone-beam CT (CBCT) scan, reviews it in 2D and
 3D, and gets measurements that help plan an implant. The source code and patient data are private;
 this page describes what it does.
 
@@ -60,4 +60,4 @@ for 2D and 3D review.
 
 ## Status
 
-In development at AMII. A live walkthrough is available on request.
+In development at GentleArk. A live walkthrough is available on request.
